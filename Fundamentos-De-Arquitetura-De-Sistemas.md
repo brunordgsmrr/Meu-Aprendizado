@@ -7,9 +7,9 @@
 
 ### Funcionamento do Web Service
 
-![image-4.jpg](Imagens\image-4.png)
+<img src=".\Imagens\image-4.png" alt="image-4" style="zoom:50%;" />
 
-![image-5.png](.\Imagens\image-5.png)
+<img src= ".\Imagens\image-5.png" alt="image-5" style="zoom:50%;" />
 
 ### Vantagens
 
