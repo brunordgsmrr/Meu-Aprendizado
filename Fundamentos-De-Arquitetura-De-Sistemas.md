@@ -7,7 +7,7 @@
 
 ### Funcionamento do Web Service
 
-![image-4.jpg](.\Imagens\image-4.png)
+![image-4.jpg](\Imagens\image-4.png)
 
 ![image-5.png](.\Imagens\image-5.png)
 
