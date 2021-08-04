@@ -76,7 +76,7 @@ O "SOAP Message" possui uma estrutura única que deve sempre ser seguida.
 - Utiliza dos métodos HTTP para definir a operação que está seno efetuada.
 - Arquitetura de fácil compreensão.
 
-<img src=".\imagens\image-8.png" alt="image-8" style="zoom:50%;"/>
+<img src=".\Imagens\image-8.png" alt="image-8" style="zoom:50%;"/>
 
 #### API - "Application Programming Interface"
 
@@ -141,19 +141,19 @@ https://www.postman.com/ - **Postman** - Aplicação para desenvolvimento de API
 
 #### Tipos de Arquiteturas de sistemas
 
-<img src=".\imagens\image-9.png" alt="image-9" style="zoom: 50%;"/>
+<img src=".\Imagens\image-9.png" alt="image-9" style="zoom: 50%;"/>
 
-<img src=".\imagens\image-10.png" alt="image-10" style="zoom:50%;"/>
+<img src=".\Imagens\image-10.png" alt="image-10" style="zoom:50%;"/>
 
-<img src=".\imagens\image-11.png" alt="image-11" style="zoom:50%;"/>
+<img src=".\Imagens\image-11.png" alt="image-11" style="zoom:50%;"/>
 
-<img src=".\imagens\image-12.png" alt="image-12s" style="zoom:50%;"/>
+<img src=".\Imagens\image-12.png" alt="image-12s" style="zoom:50%;"/>
 
-<img src=".\imagens\image-13.png" alt="image-13" style="zoom:50%;"/>
+<img src=".\Imagens\image-13.png" alt="image-13" style="zoom:50%;"/>
 
-<img src=".\imagens\image-14.png" alt="image-14" style="zoom:50%;"/>
+<img src=".\Imagens\image-14.png" alt="image-14" style="zoom:50%;"/>
 
-<img src=".\imagens\image-15.png" alt="image-15" style="zoom:50%;"/>
+<img src=".\Imagens\image-15.png" alt="image-15" style="zoom:50%;"/>
 
-<img src=".\imagens\image-16.png" alt="image-16" style="zoom:50%;"/>
+<img src=".\Imagens\image-16.png" alt="image-16" style="zoom:50%;"/>
 
