@@ -8,7 +8,7 @@
 
 ### Funcionamento do Web Service
 
-<img src=".\Imagens\image-4.png" alt="image-4" style="max-width:75%;" />
+<img src=".\Imagens\image-4.png" alt="image-4" width="200"" />
 
 <img src=".\Imagens\image-5.png" alt="image-5" style="max-width:75%;" />
 
