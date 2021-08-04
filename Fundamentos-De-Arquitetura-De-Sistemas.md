@@ -8,9 +8,9 @@
 
 ### Funcionamento do Web Service
 
-<img src=".\Imagens\image-4.png" alt="image-4" width="50%" />
+<img src=".\Imagens\image-4.png" alt="image-4" width="75%" />
 
-<img src=".\Imagens\image-5.png" alt="image-5" style="max-width:75%;" />
+<img src=".\Imagens\image-5.png" alt="image-5" width="75%" />
 
 ### Vantagens
 
@@ -47,13 +47,13 @@
 
 O "SOAP Message" possui uma estrutura única que deve sempre ser seguida.
 
-<img src=".\Imagens\image-6.png" alt="image-6" style="max-width:75%;" />
+<img src=".\Imagens\image-6.png" alt="image-6" width="75%" />
 
 - **SOAP Envelope** é o primeiro elemento do documento e é usado para encapsular toda a mensagem SOAP.
 - **SOAP Header** é o elemento onde possui informações de atributos e metadados de requisição.
 - **SOAP Body** é o elemento que contém os detalhes da mensagem.
 
-<img src=".\Imagens\image-7.png" alt="image-7" style="max-width:75%;" />
+<img src=".\Imagens\image-7.png" alt="image-7" width="75%" />
 
 #### WSDL - "Web Service Description Language"
 
@@ -76,7 +76,7 @@ O "SOAP Message" possui uma estrutura única que deve sempre ser seguida.
 - Utiliza dos métodos HTTP para definir a operação que está seno efetuada.
 - Arquitetura de fácil compreensão.
 
-<img src=".\Imagens\image-8.png" alt="image-8" style="max-width:75%;"/>
+<img src=".\Imagens\image-8.png" alt="image-8" width="75%"/>
 
 #### API - "Application Programming Interface"
 
@@ -141,19 +141,19 @@ https://www.postman.com/ - **Postman** - Aplicação para desenvolvimento de API
 
 #### Tipos de Arquiteturas de sistemas
 
-<img src=".\Imagens\image-9.png" alt="image-9" style="max-width:75%;"/>
+<img src=".\Imagens\image-9.png" alt="image-9" width="75%"/>
 
-<img src=".\Imagens\image-10.png" alt="image-10" style="max-width:75%;"/>
+<img src=".\Imagens\image-10.png" alt="image-10" width="75%"/>
 
-<img src=".\Imagens\image-11.png" alt="image-11" style="max-width:75%;"/>
+<img src=".\Imagens\image-11.png" alt="image-11" width="75%"/>
 
-<img src=".\Imagens\image-12.png" alt="image-12" style="max-width:75%;"/>
+<img src=".\Imagens\image-12.png" alt="image-12" width="75%"/>
 
-<img src=".\Imagens\image-13.png" alt="image-13" style="max-width:75%;"/>
+<img src=".\Imagens\image-13.png" alt="image-13" width="75%"/>
 
-<img src=".\Imagens\image-14.png" alt="image-14" style="max-width:75%;"/>
+<img src=".\Imagens\image-14.png" alt="image-14" width="75%"/>
 
-<img src=".\Imagens\image-15.png" alt="image-15" style="max-width:75%;"/>
+<img src=".\Imagens\image-15.png" alt="image-15" width="75%"/>
 
-<img src=".\Imagens\image-16.png" alt="image-16" style="max-width:75%;"/>
+<img src=".\Imagens\image-16.png" alt="image-16" width="75%"/>
 
