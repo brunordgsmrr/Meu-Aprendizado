@@ -12,7 +12,7 @@
 
 **Definição:** Modelo mais comum, que classifica e organiza as informações em tabelas com linhas e colunas. As linhas, ou tuplas, são os dados organizados, são os valores das tabelas, e as colunas são os atributos destes dados.
 
-![image-1](.\Imagens\image-1.png)
+<img src=".\Imagens\image-1.png" alt="image-1" style="zoom:50%;" />
 
 **O que pode ser definido como tabelas?**
 
@@ -38,7 +38,7 @@
 
   Valor de referência a uma PK de outra tabela ou da mesma tabela para criar relacionamentos.
 
-![image-2](.\Imagens\image-2.png)
+<img src=".\Imagens\image-2.png" alt="image-2" style="zoom:50%;" />
 
 #### Sistemas de gerenciamento de banco de dados (SGBD)
 
@@ -52,7 +52,7 @@ Teve início no Departamento de Ciência da Computação na Universidade da Cali
 
 SGBD Opensource.
 
-![image-3](.\Imagens\image-3.png)
+<img src=".\Imagens\image-3.png" alt="image-3" style="zoom:50%;" />
 
 
 
