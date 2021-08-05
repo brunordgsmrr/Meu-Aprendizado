@@ -172,3 +172,36 @@ https://www.postman.com/ - **Postman** - Aplicação para desenvolvimento de API
 
 <img src=".\Imagens\image-16.png" alt="image-16" width="75%"/>
 
+<img src=".\Imagens\image-17.png" alt="image-17" width="75%"/>
+
+## Conceitos de Internet das Coisas (IoT)
+
+Internet das coisas é um conceito que se refere à interconexão digital de objetos cotidianos com a internet, conexão dos objetos mais do que das pessoas. Em outras palavras, a internet das coisas nada mais é que uma rede de objetos físicos capaz de reunir e de transmitir dados.
+
+#### Por que conectar as coisas?
+
+- Embutir sensores em objetos do dia-a-dia.
+- Coletar dados dos sensores.
+- Usar o dado para tomar decisão.
+
+<img src=".\Imagens\image-18.png" alt="image-16" width="75%"/>
+
+#### Exemplos de utilização
+
+- Smart building (Edifícios inteligentes)
+- Smart Home (Casas inteligentes)
+- Vestiveis
+- Agricultura
+- Smart Transportation (Transporte inteligente)
+- RFID Supply Chain (Corrente de suplemento) - Rastreio de objetos por meio de etiquetas RFID
+- Energy Efficiency (Energia Eficiente)
+
+#### Desafios da Internet das Coisas
+
+1. Privacidade e Segurança
+2. Quantidade exponencial de dispositivos conectados na rede
+3. Ser capaz de processar e armazenar uma enorme quantidade de informações
+4. Gerar valor a partir dos dados coletados
+
+
+
