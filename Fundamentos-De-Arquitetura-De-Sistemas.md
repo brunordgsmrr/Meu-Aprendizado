@@ -47,13 +47,28 @@
 
 O "SOAP Message" possui uma estrutura única que deve sempre ser seguida.
 
-<img src=".\Imagens\image-6.png" alt="image-6" width="75%" />
+<img src=".\Imagens\image-6.png" alt="image-6" width="50%" />
 
 - **SOAP Envelope** é o primeiro elemento do documento e é usado para encapsular toda a mensagem SOAP.
 - **SOAP Header** é o elemento onde possui informações de atributos e metadados de requisição.
 - **SOAP Body** é o elemento que contém os detalhes da mensagem.
 
-<img src=".\Imagens\image-7.png" alt="image-7" width="75%" />
+````xml
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+	<soap:Header>
+	</soap:Header>
+	<soap:Body>
+        <m:MetodoEndereco xmlns:m="http://www.example.org/endereco">
+            <m:Cidade>Rio de Janeiro</m:Cidade>
+            <m:CEP>99999-999</m:CEP>
+            <m:Longradouro>Avenida Atlântida</m:Longradouro>
+            <m:Numero>99</m:Numero>
+        </m:MetodoEndereco>
+	</soap:Body>
+</soap:Envelope>
+````
+
+
 
 #### WSDL - "Web Service Description Language"
 
