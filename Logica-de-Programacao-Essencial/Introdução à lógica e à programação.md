@@ -151,3 +151,9 @@ Agrupamento de duas ou mais células que, incluindo fórmulas, textos ou outras 
 
 <img src="..\Imagens\image-58.png" alt="image-58" width="50%" />
 
+## Estrutura de repetição
+
+Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma **condição** ou com um **contador**.
+
+<img src="C:\Workspace\Meu-Aprendizado\Imagens\image-59.png" alt="image-59" width="75%"/>
+
