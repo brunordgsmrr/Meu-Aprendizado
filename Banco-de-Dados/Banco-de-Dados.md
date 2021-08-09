@@ -1,6 +1,6 @@
 # Banco de dados
 
-## Introdução
+## Introdução ao banco de dados
 
 #### Fundamentos do Banco de dados
 
@@ -44,7 +44,7 @@
 
 ​	Conjunto de programas ou softwares responsáveis pelo gerenciamento de um banco de dados. Programas que facilitam a administração de um banco de dados. Ex: PostgreSQL, MySQL.
 
-#### O que é o PostgreSQL?
+## O que é o PostgreSQL?
 
 Sistema de gerenciamento de banco de dados objeto relacional.
 
