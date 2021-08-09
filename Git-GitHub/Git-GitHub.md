@@ -174,5 +174,7 @@ Algum tempo o segundo subiu o seu código com a função *multi* .
 
 <img src="..\Imagens\image-83.png" alt="image-83" width="75%"/>
 
-Porem o Github por ter recebido o arquivo do primeiro desenvolver, ira considerar o do segundo como a penúltima versão, ou seja, uma versão desatualizada, e será necessário um git pull para adicionar sua parte após a parte do primeiro desenvolvedor
+Porem o Github por ter recebido o arquivo do primeiro desenvolver, ira considerar o do segundo como a penúltima versão, ou seja, uma versão desatualizada, será necessário executar git pull para puxar a ultima versão do código, a que foi adicionada pelo primeiro desenvolvedor e modificar novamente, apenas adicionando sua parte do código.
+
+<img src="..\Imagens\image-84.png" alt="image-84" width="75%"/>
 
