@@ -1,13 +1,12 @@
 # Git e GitHUB
 
-## Introdução
+## Introdução ao git
 
  - **O que é Git** - é um sistema de versionamento distribuído, utilizado no desenvolvimento de *software*. Criado por Linus Torvalds, criador e mantenedor do Kernel Linux.
- - **O que é GitHub** - é uma plataforma de repositórios remoto para projetos e controle de versão do Git, além de ser uma rede social para desenvolvedores, onde é possível contribuir com projetos privados e *Open Source*.
 
 **Instalação do Git** - https://git-scm.com/downloads
 
-## Comando básicos terminal via CLI (Command Line Interface)
+### Comando básicos terminal via CLI (Command Line Interface)
 
 #### Windows
 
@@ -28,7 +27,7 @@
 
 ### SHA1
 
-A sigla SHA significa *Secure Hash Algorithm* (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas pela NSA(Agência de Segurança Nacional dos EUA).
+A sigla SHA significa *Secure Hash Algorithm* (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
 
 A encriptação gera conjunto de caracteres identificador de 40 dígitos.
 
@@ -84,7 +83,7 @@ Inicializar um repositório e criar um arquivo ".git", para começar o versionam
 git init
 ````
 
-Configurar o git pela primeira:
+Configurar o git pela primeira, para que o autor das alterações sejam identificados tanto no repositório local quanto no remoto:
 
 ````bash
 git config --global user.email "email@email.com"
@@ -113,15 +112,49 @@ git commit -m "Mensagem"
 
 ## Ciclo de vida dos arquivos no Git
 
+### Untracked e Tracked
 
+<img src="..\Imagens\image-76.png" alt="image-76" width="75%"/>
 
+**Untracked** - O arquivo não esta sendo versionado
 
+**Tracked** - O arquivo esta sendo versionado, podendo estar em estado de "Unmodified", "Modified" e "Staged".
+
+**Unmodified** - O arquivo não sofreu alterações, ou seja esta em sua ultima versão.
+
+**Modified** - O arquivo foi modificado e esta preparado para um "git add", que o adicionara em "Staged".
+
+**Staged** - Onde o arquivo estará preparado para uma "commit", o deixando em "unmodified" como sendo sua ultima versão.
+
+### Funcionamento do Repositório 
+
+<img src="..\Imagens\image-77.png" alt="image-77" width="75%"/>
+
+**Working Directory** - Fica os arquivos que estão sendo trabalhados.
+
+**Staging Area** - Onde fica os arquivos prontos para "commit".
+
+**Local Repository** - Onde fica as ultimas versões dos arquivos.
+
+**Remote Repository** - Seria um repositório remoto, 
 
 ## Introdução ao GitHub
 
+**O que é GitHub** - é uma plataforma de repositórios remoto para projetos e controle de versão do Git, além de ser uma rede social para desenvolvedores, onde é possível contribuir com projetos privados e *Open Source*.
 
+### Iniciar um repositório remoto
 
+**Criar um repositorio no GitHub** 
 
+<img src="..\Imagens\image-78.png" alt="image-78" width="75%"/>
+
+**Iniciar o repositório remoto** 
+
+<img src="..\Imagens\image-79.png" alt="image-79" width="75%"/>
+
+Ou deve ser iniciado um repositório local como mostrado anteriormente, para depois apontar para o remoto com "git remote add origin \<link>" e "git push -u origin master".
+
+Ou se já existir um repositório local, apenas executar "git remote add origin \<link>" e "git push -u origin master".
 
 ## Resolvendo conflitos
 
