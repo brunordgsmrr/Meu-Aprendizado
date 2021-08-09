@@ -158,5 +158,21 @@ Ou se já existir um repositório local, apenas executar "git remote add origin 
 
 ## Resolvendo conflitos
 
+Caso ocorra de um arquivo estar sendo alterado nos mesmo local por duas pessoas e elas tentem subir este arquivo para o repositório remoto, ira ocorrer um conflito de versão.
 
+<img src="..\Imagens\image-80.png" alt="image-80" width="75%"/>
+
+por exemplo, dois desenvolvedores começaram a editar o código de um arquivo que puxaram do repositório remoto, por exemplo esse código com duas funções.
+
+<img src="..\Imagens\image-81.png" alt="image-81" width="75%"/>
+
+Porem cada um adicionou uma função nova em um mesma linha, o primeiro ao terminar criou sua commit do arquivo e subiu com a função *div* para o repositório remoto. 
+
+<img src="..\Imagens\image-82.png" alt="image-82" width="75%"/>
+
+Algum tempo o segundo subiu o seu código com a função *multi* .
+
+<img src="..\Imagens\image-83.png" alt="image-83" width="75%"/>
+
+Porem o Github por ter recebido o arquivo do primeiro desenvolver, ira considerar o do segundo como a penúltima versão, ou seja, uma versão desatualizada, e será necessário um git pull para adicionar sua parte após a parte do primeiro desenvolvedor
 
