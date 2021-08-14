@@ -1,0 +1,148 @@
+# Banco de dados
+
+## Introdução ao banco de dados
+
+### Fundamentos do Banco de dados
+
+**O que são dados? ** Valores brutos, fatos brutos, observações documentados, registros soltos, que são recolhidos e armazenados sem sofrer qualquer tratamento. Exemplo: "11987475587" , "Daniel".
+
+**O que são informações?** Estruturação de dados, organização de dados. Conjunto de dados relacionados entre si que geram valor, que criam sentidos aos dados. Material de conhecimento.
+
+<img src="..\Imagens\image-85.png" alt="image-85" width="50%" />
+
+#### Modelo relacional
+
+**Definição:** Modelo mais comum, que classifica e organiza as informações em tabelas com linhas e colunas. As linhas, ou tuplas, são os dados organizados, são os valores das tabelas, e as colunas são os atributos destes dados.
+
+<img src="..\Imagens\image-1.png" alt="image-1" width="50%" />
+
+<img src="..\Imagens\image-86.png" alt="image-86" width="50%" />
+
+**Tabelas**
+
+Conjuntos de dados dispostos em colunas e linhas referentes a um objetivo comum. As colunas são consideradas como "campos da tabela", como atributos da tabela. As linhas de uma tabela são chamadas também de tuplas, e é onde estão contidos os valores, os dados.
+
+**O que pode ser definido como tabelas?**
+
+- **Coisas tangíveis** - Elementos físicos (carros, produto, animal).
+
+- **Funções** - Perfis de usuários, status de compra
+
+- **Eventos ou ocorrências** - Produtos de um pedido, histórico de dados
+
+**Colunas importantes**
+
+- **Chave Primária / Primary Key / PK**
+
+  Conjunto de um ou mais campos que nunca se repetem. Identidade da tabela. São utilizados como índice de referência na criação de relacionamentos entre tabelas.
+
+- **Chave Estrangeira / Foreign Key / FK**
+
+  Valor de referência a uma PK de outra tabela ou da mesma tabela para criar relacionamentos.
+
+<img src="..\Imagens\image-2.png" alt="image-2" width="50%" />
+
+**Sistemas de gerenciamento de banco de dados (SGBD)**
+
+Conjunto de programas ou softwares responsáveis pelo gerenciamento de um banco de dados. Programas que facilitam a administração de um banco de dados. Ex: PostgreSQL, MySQL.
+
+<img src="..\Imagens\image-87.png" alt="image-87" width="50%" />
+
+## Introdução ao PostgreSQL
+
+### O que é o PostgreSQL?
+
+Sistema de gerenciamento de banco de dados objeto relacional.
+
+Teve início no Departamento de Ciência da Computação na Universidade da Califórnia em Berkeley em 1986.
+
+SGBD *Opensource*.
+
+<img src="..\Imagens\image-3.png" alt="image-3" width="75%" />
+
+<img src="..\Imagens\image-88.png" alt="image-88" width="75%" />
+
+**Principais características**
+
+- *OpenSource*.
+- Point in time recovery.
+- Linguagem procedural com suporte a várias linguagens de programação (perl, python, etc).
+- Views, functions, procedures, triggers.
+- Consultas complexas e commo table expressions (CTE).
+- Suporte a dados geográficos (PostGIS).
+- Controle de concorrência multi-versão.
+
+## Instalação PostgreSQL
+
+#### Instalação do PostgreSQL no Linux (Ubuntu)
+
+**Criar um arquivo de configuração: **
+
+```
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+```
+
+**Importar o chave do repositório oficial: **
+
+```
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+```
+
+**Atualizar os repositórios: **
+
+```
+sudo apt-get update
+```
+
+**Instalar o PostgreSQL:**
+
+```
+sudo apt-get -y install postgresql
+```
+
+**Comandos**
+
+````bash
+# lista os clusters
+pg_lsclusters
+````
+
+`````bash
+#No caminho especificado, utilizando a versão selecionada do PostgreSQL será criado um cluster com o nome que foi dado e o iniciará. 
+pg_createcluster -d <caminho do diretório> <versão> <nome do cluster> --start
+`````
+
+#### Instalação do PgAdmin no Linux (Ubuntu)
+
+Ferramenta gráfica para interagir com o banco de dados.
+
+Link: https://www.pgadmin.or/
+
+```bash
+#
+# Setup do repositório
+#
+
+# Instala a chave publica para o repositório (caso não tenha sido feita anteriormente):
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+
+# Cria o arquivo de configuração do repositório:
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+
+#
+# Instalação pgAdmin
+#
+
+# Instalação para ambos modos, Desktop e web:
+sudo apt install pgadmin4
+
+# Intalação apenas para modo desktop:
+sudo apt install pgadmin4-desktop
+
+# Intalação apenas para modo web: 
+sudo apt install pgadmin4-web 
+
+# Configure o webserver, se tiver sido intalado o pgadmin4-web:
+sudo /usr/pgadmin4/bin/setup-web.sh
+```
+
