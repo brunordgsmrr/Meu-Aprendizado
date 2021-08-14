@@ -1,6 +1,6 @@
 # Objetos e tipos de dados do PostgreSQL
 
-## O arquivo postgresql.conf
+### O arquivo postgresql.conf
 
 **Definição**
 
@@ -51,7 +51,7 @@ No sistema operacional Ubuntu, se o PostgreSQL foi instalado a partir do reposit
 - **WORK_MEM** - Tamanho da memória para operações de agrupamento e ordenação (ORDER BY, DISTINCT, MERGE JOINS).
 - **MAINTENANCE_QORK_MEM** - Tamanho da memória para operações como VACUUM, INDEX, ALTER, TABLE.
 
-## O arquivo pg_hba.conf
+### O arquivo pg_hba.conf
 
 **Definição**
 
@@ -79,7 +79,7 @@ O formato do arquivo pode ser:
 
 <img src="../Imagens/image-92.png" alt="image-92" width="75%"/>
 
-## O arquivo pg_ident.conf
+### O arquivo pg_ident.conf
 
 **Definição**
 
@@ -87,7 +87,7 @@ Arquivo responsável por mapear os usuários do sistema operacional com os usuá
 
  <img src="../Imagens/image-93.png" alt="image-93" width="75%"/>
 
-## Comandos administrativos
+### Comandos administrativos
 
 **Ubuntu:**
 
@@ -132,7 +132,7 @@ systemctl restart postgresql-13
 - reindexdb
 - vacuumdb
 
-## Arquitetura/Hierarquia
+### Arquitetura/Hierarquia
 
 **Cluster**
 
@@ -150,7 +150,7 @@ Conjunto de objetos/relações (tabelas, funções, views, etc).
 
 <img src="../Imagens/image-95.png" alt="image-95" width="75%"/>
 
-## Conhecendo a ferramenta PGAdmin
+### Conhecendo a ferramenta PGAdmin
 
 **Importante para conexão:**
 
@@ -217,4 +217,164 @@ Após ser criado o novo banco de dados não aparecera na lista, sendo necessári
 <img src="../Imagens/image-110.png" alt="image-110" width="50%"/>
 
 <img src="../Imagens/image-111.png" alt="image-111" width="50%"/>
+
+## Administração de usuários
+
+### Conceitos  user/roles/groups
+
+Roles (papéis ou funções), users (usuários) e grupo de usuários são "contas", perfis de atuação em um banco de dados, que possuem permissões em comum ou específicas.
+
+Nas versões anteriores do PostgreSQL 8.1, usuários e roles tinham comportamentos diferentes.
+
+Atualmente, roles e user são alias.
+
+É possível que roles pertençam a outras roles;
+
+<img src="../Imagens/image-112.png" alt="image-112" width="50%"/>
+
+### Administrando user/roles/groups
+
+CREATE ROLE name [WITH] option[...]
+
+Onde option pode ser:
+
+<img src="../Imagens/image-113.png" alt="image-113" width="50%"/>
+
+Exemplo:
+
+<img src="../Imagens/image-114.png" alt="image-114" width="75%"/>
+
+### Associação entre roles
+
+Quando uma role assume as permissões de outra role. Necessário a opção INHERIT.
+
+No momento de criação da role:
+
+- IN ROLE (passa a pertencer a role informada)
+- ROLE (a role informada passa a pertencer a nova role)
+
+Ou após a criação da role:
+
+````sql
+GRANT [role a ser concedida] TO [role a assumir as permissões]
+````
+
+Exemplo:
+
+`````sql
+CREATE ROLE professores
+	NOCREATEDB
+	NOCRATEROLE
+	INHERIT
+	NOLOGIN
+	NOBYPASSRLS
+	CONNECTION LIMIT -1;
+`````
+
+````SQL
+CREATE ROLE daniel LOGIN CONNECTION LIMIT 1 PASSWORD '123' IN ROLE professores;
+````
+
+- A role daniel passa a assumir as permissões da role professores
+
+````sql
+CREATE ROLE daniel LOGIN CONNECTION LIMIT 1 PASSWORD '123' ROLE professores;
+````
+
+- A role professores passar a fazer parte da role daniel assumindo suas permissões.
+
+````plsql
+CREATE ROLE daniel LOGIN CONNECTION LIMIT 1 PASSWORD '123';
+GRANT professores TO daniel;
+````
+
+### Desassociar membros entre roles
+
+REVOKE [role que será revogada] FROM [role que terá suas permissões revogadas]
+
+````plsql
+REVOKE professores FROM daniel;
+````
+
+### Alterando uma role
+
+ALTER ROLE role_specification [WITH] option [...]
+
+Onde option pode :
+
+<img src="../Imagens/image-115.png" alt="image-115" width="75%"/>
+
+### Excluir uma role
+
+````plsql
+DROP ROLE role_specification;
+````
+
+### Prática
+
+Criar a role Professor:
+
+<img src="../Imagens/image-116.png" alt="image-116" width="75%"/>
+
+<img src="../Imagens/image-117.png" alt="image-117" width="75%"/>
+
+Alterar a role professor:
+
+<img src="../Imagens/image-118.png" alt="image-118" width="75%"/>
+
+Criar uma role associada a outra:
+
+<img src="../Imagens/image-120.png" alt="image-120" width="75%"/>
+
+<img src="../Imagens/image-119.png" alt="image-119" width="75%"/>
+
+### Administrando acessos (GRANT)
+
+São privilégios de acesso aos objetos de banco de dados.
+
+**Privilégios:**
+
+|  Tabela  |       Database       |   Function   |   Schema   |
+| :------: | :------------------: | :----------: | :--------: |
+|  coluna  |        domain        |   language   | tablespace |
+| sequence | foreign data wrapper | large object |    type    |
+|          |    foreign server    |              |            |
+
+````plsql
+-- DATABASE
+GRANT {{CREATE | CONNECT | TEMPORARY | TEMP}[, ...] | ALL [PRIVILEGES]} ON DATABA database_name [, ...] TO role_sprecification [, ...] [WITH GRANT OPTION]
+
+--SCHEMA
+GRANT {{CREATE | USAGE} [, ...] | ALL [PRIVILEGES]} ON SCHEMA schema_name [, ...] TO role_specification [, ...] [WITH GRANT OPTION]
+
+-- TABLE
+GRANT {{SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER} [, ...] | ALL [PRIVILEGES]} ON {[TABLE] table_name[, ...] | ALL TABLES IN SCHEMA schema_name[, ...]} TO role_specification [, ...] [WITH GRANT OPTION]
+````
+
+**REVOKE** - Retira as permissões da role
+
+````plsql
+-- DATABASE
+REVOKE [GRANT OPTION FOR] {{CREATE | CONNECT | TEMPORARY | TEMP}[,...] | ALL [PRIVILEGES]} ON DATABA database_name [,...] FROM {[GROUP] role_name | PUBLIC}[,...][CASCADE | RESTRICT]
+
+--SCHEMA
+REVOKE [GRANT OPTION FOR] {{CREATE | USAGE} [,...] | ALL [PRIVILEGES]} ON SCHEMA schema_name [,...] FROM {[GROUP] role_name | PUBLIC}[,...][CASCADE | RESTRICT]
+
+-- TABLE
+REVOKE [GRANT OPTION FOR] {{SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER} [,...] | ALL [PRIVILEGES]} ON {[TABLE] table_name[,...] | ALL TABLES IN SCHEMA schema_name[,...]} FROM {[GROUP] role_name | PUBLIC}[,...][CASCADE | RESTRICT]
+````
+
+**Revogando todas as permissões (simplificado)**
+
+REVOKE ALL ON TABLE IN SCHEMA [schema] FROM [role];
+
+REVOKE ALL ON SCHEMA [schema] FROM [role];
+
+REVOKE ALL ON DATABASE [database] FROM [role];
+
+**Prática**
+
+<img src="../Imagens/image-121.png" alt="image-121" width="75%"/>
+
+<img src="../Imagens/image-122.png" alt="image-122" width="75%"/>
 
