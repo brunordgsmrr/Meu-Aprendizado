@@ -36,7 +36,7 @@ Essas são aquelas cuja sintaxe se aproxima mais da nossa linguagem e se distanc
 
 Link do Portugol-Studio: https://github.com/UNIVALI-LITE/Portugol-Studio/releases/
 
-<img src="..\Imagens\image-60.png" alt="image-60" width="75%"/>
+<img src="..\Imagens\image-60.jpg" alt="image-60" width="75%"/>
 
 ### Desvios condicionais (Estrutura de decisão)
 
@@ -46,31 +46,31 @@ Link do Portugol-Studio: https://github.com/UNIVALI-LITE/Portugol-Studio/release
 
 
 
-<img src="..\Imagens\image-62.png" alt="image-62" width="75%"/>
+<img src="..\Imagens\image-62.jpg" alt="image-62" width="75%"/>
 
 **SE-SENAO**
 
 Agora vamos imaginar que se a condição for **falsa** um outro conjunto de comandos deve ser executado. Quando iremos encontrar esta situação?
 
-<img src="..\Imagens\image-63.png" alt="image-63" width="75%"/>
+<img src="..\Imagens\image-63.jpg" alt="image-63" width="75%"/>
 
 **Boas praticas**
 
 Comentar trechos do código utilizando "//" duas barras.
 
-<img src="..\Imagens\image-64.png" alt="image-64" width="75%"/>
+<img src="..\Imagens\image-64.jpg" alt="image-64" width="75%"/>
 
 **CASO**
 
 Este comando é similar aos comandos **se** e **senão**, e reduz a complexidade na escolha de diversas opções. Apesar de sua similaridades com **se**, ele possui algumas diferenças. Neste comando não é possível o uso de operadores lógicos, ele apenas trabalha com valores definidos.
 
-<img src="..\Imagens\image-65.png" alt="image-65" width="75%"/>
+<img src="..\Imagens\image-65.jpg" alt="image-65" width="75%"/>
 
 ### Laços de repetição - Portugol
 
 Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma **condição** ou com um **contador.**
 
-<img src="..\Imagens\image-66.png" alt="image-66" width="75%"/>
+<img src="..\Imagens\image-66.jpg" alt="image-66" width="75%"/>
 
 ### Matrizes e vetores
 
@@ -80,13 +80,13 @@ A individualização de cada variável de um vetor é feita através do uso de *
 
 Os **vetores** são matrizes de uma só dimensão.
 
-<img src="..\Imagens\image-67.png" alt="image-67" width="75%"/>
+<img src="..\Imagens\image-67.jpg" alt="image-67" width="75%"/>
 
 **Vetor**
 
-<img src="..\Imagens\image-68.png" alt="image-68" width="50%"/>
+<img src="..\Imagens\image-68.jpg" alt="image-68" width="50%"/>
 
 **Matriz**
 
-<img src="..\Imagens\image-69.png" alt="image-69" width="75%"/>
+<img src="..\Imagens\image-69.jpg" alt="image-69" width="75%"/>
 

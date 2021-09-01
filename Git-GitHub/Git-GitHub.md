@@ -46,7 +46,7 @@ echo "ola mundo" | openssl sha1
 
 Objeto onde é guardado o conteúdo.
 
-<img src="..\Imagens\image-70.png" alt="image-70" width="50%"/>
+<img src="..\Imagens\image-70.jpg" alt="image-70" width="50%"/>
 
 ````bash
 echo 'conteudo' | git hash-object --stdin
@@ -63,17 +63,17 @@ echo -e 'blob 9/0conteudo' | openssl sha1
 
 Objeto que contem um tamanho, o nome do arquivo que esta na *blob* ou outras *tree* e a *hash* da *blob*. Apontam para a *blob* ou para outra *tree*, alterações em um arquivo, iram alterar o *hash* da *blob* que ira alterar o *hash* da *tree*.
 
-<img src="..\Imagens\image-71.png" alt="image-71" width="50%"/>
+<img src="..\Imagens\image-71.jpg" alt="image-71" width="50%"/>
 
-<img src="..\Imagens\image-72.png" alt="image-72" width="75%"/>
+<img src="..\Imagens\image-72.jpg" alt="image-72" width="75%"/>
 
 **Commit**
 
 Objeto que contem tamanho, hash da tree que esta apontando, nome do autor, uma mensagem é uma marcação de tempo
 
-<img src="..\Imagens\image-73.png" alt="image-73" width="50%"/>
+<img src="..\Imagens\image-73.jpg" alt="image-73" width="50%"/>
 
-<img src="..\Imagens\image-74.png" alt="image-74" width="75%"/>
+<img src="..\Imagens\image-74.jpg" alt="image-74" width="75%"/>
 
 ## Primeiros comandos com Git
 
@@ -106,7 +106,7 @@ git commit -m "Mensagem"
 
 **Arquivos Markdown**
 
-<img src="..\Imagens\image-75.png" alt="image-75" width="75%"/>
+<img src="..\Imagens\image-75.jpg" alt="image-75" width="75%"/>
 
 
 
@@ -114,7 +114,7 @@ git commit -m "Mensagem"
 
 ### Untracked e Tracked
 
-<img src="..\Imagens\image-76.png" alt="image-76" width="75%"/>
+<img src="..\Imagens\image-76.jpg" alt="image-76" width="75%"/>
 
 **Untracked** - O arquivo não esta sendo versionado
 
@@ -128,7 +128,7 @@ git commit -m "Mensagem"
 
 ### Funcionamento do Repositório 
 
-<img src="..\Imagens\image-77.png" alt="image-77" width="75%"/>
+<img src="..\Imagens\image-77.jpg" alt="image-77" width="75%"/>
 
 **Working Directory** - Fica os arquivos que estão sendo trabalhados.
 
@@ -146,11 +146,11 @@ git commit -m "Mensagem"
 
 **Criar um repositorio no GitHub** 
 
-<img src="..\Imagens\image-78.png" alt="image-78" width="75%"/>
+<img src="..\Imagens\image-78.jpg" alt="image-78" width="75%"/>
 
 **Iniciar o repositório remoto** 
 
-<img src="..\Imagens\image-79.png" alt="image-79" width="75%"/>
+<img src="..\Imagens\image-79.jpg" alt="image-79" width="75%"/>
 
 Ou deve ser iniciado um repositório local como mostrado anteriormente, para depois apontar para o remoto com "git remote add origin \<link>" e "git push -u origin master".
 
@@ -160,21 +160,21 @@ Ou se já existir um repositório local, apenas executar "git remote add origin 
 
 Caso ocorra de um arquivo estar sendo alterado nos mesmo local por duas pessoas e elas tentem subir este arquivo para o repositório remoto, ira ocorrer um conflito de versão.
 
-<img src="..\Imagens\image-80.png" alt="image-80" width="75%"/>
+<img src="..\Imagens\image-80.jpg" alt="image-80" width="75%"/>
 
 por exemplo, dois desenvolvedores começaram a editar o código de um arquivo que puxaram do repositório remoto, por exemplo esse código com duas funções.
 
-<img src="..\Imagens\image-81.png" alt="image-81" width="75%"/>
+<img src="..\Imagens\image-81.jpg" alt="image-81" width="75%"/>
 
 Porem cada um adicionou uma função nova em um mesma linha, o primeiro ao terminar criou sua commit do arquivo e subiu com a função *div* para o repositório remoto. 
 
-<img src="..\Imagens\image-82.png" alt="image-82" width="75%"/>
+<img src="..\Imagens\image-82.jpg" alt="image-82" width="75%"/>
 
 Algum tempo o segundo subiu o seu código com a função *multi* .
 
-<img src="..\Imagens\image-83.png" alt="image-83" width="75%"/>
+<img src="..\Imagens\image-83.jpg" alt="image-83" width="75%"/>
 
 Porem o Github por ter recebido o arquivo do primeiro desenvolver, ira considerar o do segundo como a penúltima versão, ou seja, uma versão desatualizada, será necessário executar git pull para puxar a ultima versão do código, a que foi adicionada pelo primeiro desenvolvedor e modificar novamente, apenas adicionando sua parte do código.
 
-<img src="..\Imagens\image-84.png" alt="image-84" width="75%"/>
+<img src="..\Imagens\image-84.jpg" alt="image-84" width="75%"/>
 

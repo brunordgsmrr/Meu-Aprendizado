@@ -36,17 +36,17 @@ Abstração é a habilidade de concentrar nos aspectos essenciais de um contexto
 
 É uma ferramenta utilizada para representar graficamente o algoritmo, isto é, a sequência lógica e coerente do fluxo de dados.
 
-<img src="..\Imagens\image-46.png" alt="image-46 Fluxograma" width="20%" />
+<img src="..\Imagens\image-46.jpg" alt="image-46 Fluxograma" width="20%" />
 
 Um fluxograma é um tipo de diagrama e pode ser entendido como uma representação esquemática de um processo. Podemos entendê-lo, na prática, como a documentação dos passos necessários para a execução de um processo qualquer.
 
-<img src="..\Imagens\image-47.png" alt="image-47" width="50%" />
+<img src="..\Imagens\image-47.jpg" alt="image-47" width="50%" />
 
-<img src="..\Imagens\image-48.png" alt="image-48" width="30%" />
+<img src="..\Imagens\image-48.jpg" alt="image-48" width="30%" />
 
 **Aplicativo para criação de fluxograma: Flowgorithm**
 
-<img src="..\Imagens\image-50.png" alt="image-50" width="75%" />
+<img src="..\Imagens\image-50.jpg" alt="image-50" width="75%" />
 
 ### Variáveis
 
@@ -105,7 +105,7 @@ total+50
 
 ### Operadores aritméticos
 
-<img src="..\Imagens\image-51.png" alt="image-51" width="75%" />
+<img src="..\Imagens\image-51.jpg" alt="image-51" width="75%" />
 
 ### Expressões literais
 
@@ -121,9 +121,9 @@ media=(nota1+nota2+nota3+nota4)/4
 
 ### Exemplos de expressões Aritméticas e Literais
 
-<img src="..\Imagens\image-52.png" alt="image-52" width="75%" />
+<img src="..\Imagens\image-52.jpg" alt="image-52" width="75%" />
 
-<img src="..\Imagens\image-53.png" alt="image-53" width="75%" />
+<img src="..\Imagens\image-53.jpg" alt="image-53" width="75%" />
 
 ### Operadores relacionais
 
@@ -131,17 +131,17 @@ São expressões compostas por outras expressões ou variáveis numéricas com o
 
 As expressões relacionais retornam valores lógicos (verdadeiro/falso).
 
-<img src="..\Imagens\image-54.png" alt="image-54" width="50%" />
+<img src="..\Imagens\image-54.jpg" alt="image-54" width="50%" />
 
-<img src="..\Imagens\image-55.png" alt="image-55" width="50%" />
+<img src="..\Imagens\image-55.jpg" alt="image-55" width="50%" />
 
 ### Tomadas de decisão
 
 Quando escrevemos programas, geralmente ocorre a necessidade de decidir o que fazer depende de alguma condição encontrada durante a execução.
 
-<img src="..\Imagens\image-56.png" alt="image-56" width="50%" />
+<img src="..\Imagens\image-56.jpg" alt="image-56" width="50%" />
 
-<img src="..\Imagens\image-57.png" alt="image-57" width="50%" />
+<img src="..\Imagens\image-57.jpg" alt="image-57" width="50%" />
 
 ### Concatenação
 
@@ -149,11 +149,11 @@ Concatenação é um termo usado em computação para designar a operação de u
 
 Agrupamento de duas ou mais células que, incluindo fórmulas, textos ou outras informações contida no seu interior, dá origem a um **único resultado**.
 
-<img src="..\Imagens\image-58.png" alt="image-58" width="50%" />
+<img src="..\Imagens\image-58.jpg" alt="image-58" width="50%" />
 
 ## Estrutura de repetição
 
 Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma **condição** ou com um **contador**.
 
-<img src="C:\Workspace\Meu-Aprendizado\Imagens\image-59.png" alt="image-59" width="75%"/>
+<img src="C:\Workspace\Meu-Aprendizado\Imagens\image-59.jpg" alt="image-59" width="75%"/>
 
